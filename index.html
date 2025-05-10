@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinyMCE Template Editor</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="editor-container">
+        <div class="editor-toolbar">
+          <button id="insert-button" class="button primary">Insert</button>
+        </div>
+        <div id="editor"></div>
+      </div>
+      <div class="templates-container">
+        <h2>Templates</h2>
+        <div class="templates-list" id="templates-list"></div>
+        <div class="templates-actions">
+          <button id="add-template" class="button secondary">+</button>
+          <button id="remove-template" class="button secondary">-</button>
+        </div>
+        <div class="template-edit">
+          <h3>Edit template</h3>
+          <input type="text" id="template-edit" placeholder="Edit selected template">
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
